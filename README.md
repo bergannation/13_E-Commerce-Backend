@@ -50,25 +50,34 @@ Below are links to access the deployed video link and repository.
 
 Github Repository: https://github.com/bergannation/13_E-Commerce-Backend
 
-Deployed Video Link:
+Deployed Video Link: https://drive.google.com/file/d/1VXQd1XsaxG-nikGA0BR3MO7TOTqJYG3A/view
 
 ## Mock-Up
 
 The following gif shows the web application's appearance and functionality:
 
-![.](./images/employeetracker.gif)
+![.](./images/ecommerce.gif)
 
 ## Installation
 
-The user will be required to use the Inquirer/MySQL/Console.Table package via NodeJS & NPM commands. The user will input the following in their command line to install the neccessary packages:
+The user will be required to use the dotenv/express/sequelize/mysql2 dependencies. The user will input the following in their command line to install the neccessary packages:
 
 ```bash
-npm i inquirer
-npm i mysql
-npm i console.table
+npm i sequelize
+npm i mysql2
+npm i express
+npm i dotenv
 ```
 
+![alt text](images/dependencies.png)
+
 ## Usage
+
+The user will seed the database by using the pre-seeded files. The files will be seeded by using the following command:
+
+```bash
+node seeds/index.js
+```
 
 The user will begin the process by invoking the application in NodeJS. The application will be invoked by using the following command:
 
@@ -76,15 +85,15 @@ The user will begin the process by invoking the application in NodeJS. The appli
 node server.js
 ```
 
-![alt text](images/capture1.png)
+![alt text](images/node.png)
 
-Below is the starting code that initiates the inquirer:
+Below is the code for our models that will help structure the database:
 
-![alt text](images/init.png)
+![alt text](images/models.png)
 
-Once the user has initiated the program via node, the user will be presented with a series of questions/prompts. The user will navigate via arrow keys to select their option. The image below displays an example of what will present itself when an option is selected.
+![alt text](images/categories.png)
 
-![alt text](images/capture2.png)
+![alt text](images/category2.png)
 
 ## Tests
 
